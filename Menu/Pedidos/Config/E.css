@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #007bff, #00c3ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.crud-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; /* Alineación vertical a la parte inferior */
+    transition: transform 0.3s ease-in-out;
+}
+
+.crud-button:hover {
+    transform: scale(1.1);
+}
+
+.button-text {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: red;
+    padding: 10px;
+    z-index: 1000; 
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.edit-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-add-container,
+.cart-container {
+    display: flex;
+    align-items: center;
+}
+
+.product-add-container {
+    justify-content: space-between;
+}
+
+.cart-container {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-container h2 {
+    margin-right: 20px;
+}
+
+.crud-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+button#addToCartBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#addToCartBtn:hover {
+    background-color: #0056b3;
+}

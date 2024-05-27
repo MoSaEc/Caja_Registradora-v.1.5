@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Pedido</title>
+    <link rel="stylesheet" href="./Config/N.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Lista de Productos</h1>
+        <div class="lef">
+            <img src="user.png" alt="Icono" class="icon" width="50px" height="50px">
+            <span id="username"></span>
+        </div>
+    </nav>
+    
+
+    <div class="container">
+        <div class="product-list">
+            <h2>Productos de Supermercado</h2>
+
+            <div class="product-item">
+                <img src="./leche.webp" alt="Leche">
+                <div class="product-info">
+                     <h3>Santa Clara</h3>
+                    <p>Leche entera, 1 litro</p>
+                    <p>Precio: $2.99</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./pan.jpg" alt="Pan">
+                <div class="product-info">
+                    <h3>Bimbo</h3>
+                    <p>Pan integral, 500g</p>
+                    <p>Precio: $1.49</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>  
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./yogurt.jpg" alt="Yogur">
+                <div class="product-info">
+                    <h3>Yoplait</h3>
+                    <p>Yogur natural, pack de 4 unidades</p>
+                    <p>Precio: $3.79</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./pasta.jpg" alt="Pasta">
+                <div class="product-info">
+                    <h3>Barrilla</h3>
+                    <p>Pasta de trigo, 1kg</p>
+                    <p>Precio: $1.99</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./tomates.png" alt="Tomates">
+                <div class="product-info">
+                    <h3>La Costeña</h3>
+                    <p>Tomates en lata, pack de 6 unidades</p>
+                    <p>Precio: $4.29</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./aceite.webp" alt="Aceite">
+                <div class="product-info">
+                    <h3>Acite 1-2-3</h3>
+                    <p>Aceite de oliva virgen extra, 750ml</p>
+                    <p>Precio: $6.99</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./cereal.jpg" alt="Cereal">
+                <div class="product-info">
+                    <h3>Kellogs</h3>
+                    <p>Cereal de avena, 500g</p>
+                    <p>Precio: $3.49</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./mermelada.webp" alt="Mermelada">
+                <div class="product-info">
+                    <h3>Mckornick</h3>
+                    <p>Mermelada de fresa, 250g</p>
+                    <p>Precio: $2.19</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+
+            <div class="product-item">
+                <img src="./cafe.webp" alt="Café">
+                <div class="product-info">
+                    <h3>Nescafe</h3>
+                    <p>Café molido, 250g</p>
+                    <p>Precio: $4.99</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <img src="./galletas.jpg" alt="Galletas">
+                <div class="product-info">
+                    <h3>Gamesa Chokis</h3>
+                    <p>Galletas de chocolate, pack de 12 unidades</p>
+                    <p>Precio: $2.79</p>
+                    <input type="number" class="quantity" min="0" value="0">
+                    <button class="add-to-cart">Agregar</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="cart-panel">
+            <h2>Carrito</h2>
+            <ul class="cart-items">
+                <!-- Los productos agregados se mostrarán aquí -->
+            </ul>
+            <p>Total: $<span class="total">0</span></p>
+            <button class="checkout">Terminar Pedido</button>
+        </div>
+    </div>
+
+    <script src="./Config/N.js"></script>
+    <script src="/Login/config.js"></script>
+    <script src="./displayUsername.js"></script>
+</body>
+</html>

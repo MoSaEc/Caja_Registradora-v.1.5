@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Pedido</title>
+    <link rel="stylesheet" href="./Config/E.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="user.png" alt="Icono" class="icon" width="50px" height="50px">
+        <span id="username"></span>
+    </nav>
+
+    <div class="title">
+        <h1>Editar Pedido</h1>
+    </div>
+
+    <div class="menu">
+        <div class="product-list">
+            <h2>Productos</h2>
+            <ul id="productsList">
+                <!-- Los productos se mostrarán aquí -->
+            </ul>
+        </div>
+
+        <div class="edit-panel">
+            <h2>Editar Pedido</h2>
+            <div class="product-add-container">
+                <select id="productSelect">
+                    <option value="">Selecciona un producto</option>
+                </select>
+                <input type="number" id="productQuantity" placeholder="Cantidad" min="0" value="0">
+                <button id="addToCartBtn">Agregar al Carrito</button>
+            </div>
+            <div class="cart-container">
+                <h2>Carrito</h2>
+                <ul id="cart-items">
+                    <!-- Los productos del carrito se mostrarán aquí -->
+                </ul>
+                <button id="saveOrderBtn" class="crud-button">
+                    <img src="save.png" alt="Guardar" width="50px" height="50px">
+                    <span class="button-text">Guardar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Config/editOrder.js"></script>
+    <script src="displayUsername.js"></script>
+    <script src="/Login/config.js"></script>
+    <script src="./Config/N.js"></script>
+</body>
+</html>
